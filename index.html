@@ -1,61 +1,89 @@
 
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cosa pensano di noi - Portale Sardegna</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="header">
-    <h1>Recensioni dei nostri clienti</h1>
-    <div class="summary">
-      <div class="score">
-        <div class="stars">★★★★☆</div>
-        <div class="avg">4.2 su 5</div>
-      </div>
-      <div class="count">Basato su 1.234 recensioni</div>
-    </div>
-  </header>
-
-  <section class="filters">
-    <label>Filtra per stelle:
-      <select>
-        <option>Tutte</option>
-        <option>5 stelle</option>
-        <option>4 stelle</option>
-        <option>3 stelle</option>
-        <option>2 stelle</option>
-        <option>1 stella</option>
-      </select>
-    </label>
-    <label>Filtra per data:
-      <input type="date" />
-    </label>
-    <label>Categoria:
-      <select>
-        <option>Servizio</option>
-        <option>Struttura</option>
-      </select>
-    </label>
-  </section>
-
-  <section class="reviews">
-    <article class="review">
-      <h2>Mario R. <span>• 3 Aprile 2025</span></h2>
-      <div class="stars">★★★★★</div>
-      <p>Esperienza fantastica con Portale Sardegna. Servizio clienti impeccabile!</p>
-    </article>
-    <article class="review">
-      <h2>Lucia B. <span>• 1 Aprile 2025</span></h2>
-      <div class="stars">★★★★☆</div>
-      <p>Buona organizzazione ma la struttura poteva essere migliore.</p>
-    </article>
-  </section>
-
-  <footer class="footer">
-    <p>&copy; 2025 Portale Sardegna</p>
-  </footer>
-</body>
-</html>
+html>
+en">
+<title>Customer Reviews
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+header {
+background: #007BFF;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+.average-rating {
+margin: 20px 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.stars {
+display: flex;
+}
+.star {
+color: gold;
+font-size: 24px;
+}
+.rating-score {
+margin-left: 10px;
+font-size: 36px;
+}
+.filter-bar {
+margin: 20px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+.filter {
+padding: 10px;
+border: 1px solid #007BFF;
+border-radius: 5px;
+background: white;
+cursor: pointer;
+}
+.reviews {
+max-width: 800px;
+margin: auto;
+background: white;
+padding: 20px;
+border-radius: 5px;
+}
+.review {
+border-bottom: 1px solid #ccc;
+padding: 10px 0;
+}
+.review:last-child {
+border: none;
+}
+.review-date {
+color: #999;
+font-size: 12px;
+}
+.rating-bar {
+margin: 10px 0;
+border-radius: 5px;
+background: #e0e0e0;
+}
+.rating-progress {
+height: 20px;
+background: #007BFF;
+border-radius: 5px;
+}
+</style>
+<header>
+Customer Reviews
+<div class="stars">
+<span class="star">★<span class="star">★<span class="star">★<span class="star">★<span class="star">☆<span class="rating-score">4.5<span>(Total: 150 Reviews)<div class="filter-bar">
+Filter by RatingFilter by Date
+Filter by Category
+Recent Reviews
+John Doe<span class="review-date">March 1, 2023
+<span class="star">★<span class="star">★<span class="star">★<span class="star">★<span class="star">☆
+Great service and friendly staff!
+Jane Smith<span class="review-date">February 20, 2023
+<span class="star">★<span class="star">★<span class="star">★<span class="star">★<span class="star">★
+Excellent experience from start to finish.
+© 2023 Your Company. All rights reserved.
