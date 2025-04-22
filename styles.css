@@ -1,60 +1,133 @@
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: system-ui, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background: #f9f9f9;
   color: #333;
 }
-.header {
-  background: #007b9a;
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+header {
+  background: #0a74da;
   color: white;
-  padding: 2rem;
-  text-align: center;
 }
-.summary {
-  margin-top: 1rem;
-}
-.score {
-  font-size: 1.5rem;
-}
-.stars {
-  color: gold;
-  font-size: 1.2rem;
-}
-.count {
-  margin-top: 0.5rem;
-}
-.filters {
-  background: white;
-  padding: 1rem;
+
+.header-content {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
-  justify-content: space-around;
-  border-bottom: 1px solid #ccc;
 }
+
+.logo {
+  height: 50px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.summary {
+  background: white;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.rating-overall {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.rating-overall .stars {
+  font-size: 1.5rem;
+  color: #f8b400;
+}
+
+.rating-overall .score {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+
+.stars-distribution .bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.3rem 0;
+}
+
+.progress {
+  flex-grow: 1;
+  height: 8px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: #0a74da;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.filters label {
+  flex: 1;
+}
+
 .reviews {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
+
 .review {
   background: white;
-  margin-bottom: 1rem;
   padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.04);
 }
-.review h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.1rem;
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
-.review span {
-  color: #666;
-  font-size: 0.9rem;
+
+.review .stars {
+  color: #f8b400;
+  margin-bottom: 0.5rem;
 }
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: #007b9a;
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background: #0a74da;
   color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.show-all {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+  }
 }
