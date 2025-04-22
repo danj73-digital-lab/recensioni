@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recensioni Clienti</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <img src="logo.png" alt="Logo Aziendale" class="logo" />
+      <h1>Recensioni dei nostri clienti</h1>
+    </div>
+  </header>
+
+  <section class="summary container">
+    <div class="rating-overall">
+      <div class="stars">★★★★☆</div>
+      <div class="score">4.2 su 5</div>
+      <div class="total-reviews">Basato su 1.238 recensioni</div>
+    </div>
+    <div class="stars-distribution">
+      <div class="bar"><span>5 stelle</span><div class="progress"><div style="width: 60%"></div></div><span>742</span></div>
+      <div class="bar"><span>4 stelle</span><div class="progress"><div style="width: 20%"></div></div><span>248</span></div>
+      <div class="bar"><span>3 stelle</span><div class="progress"><div style="width: 10%"></div></div><span>124</span></div>
+      <div class="bar"><span>2 stelle</span><div class="progress"><div style="width: 5%"></div></div><span>62</span></div>
+      <div class="bar"><span>1 stella</span><div class="progress"><div style="width: 5%"></div></div><span>62</span></div>
+    </div>
+  </section>
+
+  <section class="filters container">
+    <label>
+      Filtra per stelle:
+      <select>
+        <option>Tutte</option>
+        <option>5 stelle</option>
+        <option>4 stelle</option>
+        <option>3 stelle</option>
+        <option>2 stelle</option>
+        <option>1 stella</option>
+      </select>
+    </label>
+    <label>
+      Filtra per data:
+      <select>
+        <option>Più recenti</option>
+        <option>Meno recenti</option>
+      </select>
+    </label>
+    <label>
+      Categoria:
+      <select>
+        <option>Servizio</option>
+        <option>Struttura A</option>
+        <option>Struttura B</option>
+      </select>
+    </label>
+  </section>
+
+  <section class="reviews container">
+    <article class="review">
+      <div class="review-header">
+        <strong>Mario Rossi</strong>
+        <span class="date">12 Marzo 2025</span>
+      </div>
+      <div class="stars">★★★★★</div>
+      <p>Esperienza eccezionale! Il servizio clienti è stato rapido e disponibile. La struttura era pulita, accogliente e ben organizzata. Consiglio vivamente!</p>
+    </article>
+
+    <article class="review">
+      <div class="review-header">
+        <strong>Laura Bianchi</strong>
+        <span class="date">5 Febbraio 2025</span>
+      </div>
+      <div class="stars">★★★☆☆</div>
+      <p>Il soggiorno è stato nel complesso positivo, ma abbiamo riscontrato alcuni problemi tecnici. L'assistenza è intervenuta ma ci aspettavamo di meglio.</p>
+    </article>
+
+    <!-- Altre recensioni -->
+  </section>
+
+  <div class="container show-all">
+    <a href="#" class="btn">Vedi tutte le recensioni</a>
+  </div>
+
+</body>
+</html>
